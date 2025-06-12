@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    color: #23251b;
+
+}
+
+a { 
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    background: linear-gradient(180deg,rgba(9, 45, 59, 1) 0%, rgba(87, 199, 133, 1) 43%, rgba(237, 221, 83, 1) 100%);
+    width: 100%;
+}
+
+.container {
+    width: 1900px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 40px 0;
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 120px;
+    font-weight: 700;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 60px 0;
+}
+
+header nav ul li a {
+    color: bisque;
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 5px;
+    background: #d1ce12;
+    border-radius: 10px;
+    position: relative;
+    top: 18px;
+    left: -20px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #d1ce12;
+}
+
+header nav ul li.btn a {
+    background: #d1ce12;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: all 700ms ease;
+
+}
+
+header nav ul li.btn a:hover {
+    background: #93aa1185; 
+}
+
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero--info {
+    width: 640px;
+    padding-top: 97px;
+}
+
+.hero--info h2{
+    color: #ff0000;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.hero--info h1{
+    color: bisque;
+    font-family: monospace;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 140%;
+    margin: 20px 0;
+}
+
+.hero--info .btn {
+    background: #ff0000;
+    color: bisque;
+    border-radius: 70px;
+    padding: 20px 40px;
+    border: 0;
+    transition: all 900ms ease-in-out;
+    font-size: 20px;
+}
+
+.hero--info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.hero img {
+    position: absolute;
+    top: -120px;
+    right: -180px;
+}
+
+/* Раздел с обувью */
+.trending {
+    padding-top: 200px;
+}
+.trending h3 {
+    font-weight: 800;
+    font-size: 80px;
+}
+
+.trending .see-all {
+    color: rgb(0, 0, 0);
+    background: #d1ce12;
+    border-radius: 70px;
+    padding: 20px 40px;
+    float: right;
+    display: block;
+    transition: all 900ms ease;
+}
+
+.trending .see-all:hover {
+    transform: scale(1.3);
+}
+
+.trending .sneakers {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.trending .sneakers span {   
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.trending .sneakers span img {
+    position: relative;
+    top: 20px;
+}
+
+/*Раздел "О нас" и Footer*/
+footer {
+    background: #000000d5;
+    padding: 60px 0;
+}
+
+footer .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .blocks p{
+    width: 400px;
+    margin: 15px 0;
+    font-family: cursive;
+}
+
+footer .blocks h4 {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+footer .blocks ul {
+    list-style: none;
+    font-family: cursive;
+}
+
+footer .blocks ul li {
+    margin-top: 7px;
+    font-family: cursive;
+    opacity: 0.9;
+}
+
+footer hr {
+    margin: 40px 0;
+    border: 0;
+    height: 1.2px;
+    background: #7a8d0f85;
+}
+
+footer > p {
+    text-align: center;
+}
+
+/*Слайдер*/
+  .slider {
+    width: 1300px;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .slider-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slider-img.active {
+    opacity: 1;
+  }
+  
+  .slider img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .slider .prev {
+    left: 10px;
+  }
+  
+  .slider .next {
+    right: 10px;
+  }
+
+
+  
+  
+ 
